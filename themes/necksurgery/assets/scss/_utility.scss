@@ -469,6 +469,13 @@ h1, h2, h3, h4, h5, h6, .scroll-offset {
         gap: 40px;
     }
 
+    &.gap60 {
+        gap: 40px;
+        @include for-tablet-landscape-up {
+            gap: 60px;
+        }
+    }
+
     &.middle {
         align-items: center;
     }
