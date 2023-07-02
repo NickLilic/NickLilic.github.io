@@ -1,0 +1,120 @@
+<footer>
+    <div class="container">
+
+        <div class="grid two-tablet-up">
+            <!-- <div id="contact-us">
+                <h5>Pages</h5>
+                <nav>
+                    <ul>
+                        {{ with .Site.Menus.main}}
+                        {{ range sort . }}
+                        <li class="navigation-item">
+                            <a class="navigation-link" href="{{ .URL | absLangURL }}">{{ .Name }}</a>
+                        </li>
+                        {{ end }}
+                        {{ end }}
+                        <li>&nbsp;</li>
+                        {{ with .Site.Menus.footer}}
+                        {{ range sort . }}
+                        <li class="navigation-item">
+                            <a class="navigation-link" href="{{ .URL | absLangURL }}">{{ .Name }}</a>
+                        </li>
+                        {{ end }}
+                        {{ end }}
+                    </ul>
+                </nav>
+            </div> -->
+            <div class="mb-2">
+                <h2 id="contact" class="white">Contact</h2>
+                <!-- <h5>Contact us</h5>
+                <div class="x-large follow">
+                    {{ with .Site.Menus.social}}
+                        {{ range sort . }}
+                            {{  if .URL }}
+                                <a href="{{ .URL | absLangURL }}" target="_blank"><i class="{{ .Name }}"></i></a>
+                            {{ end }}
+                        {{ end }}
+                    {{ end }}
+                </div>
+                <div>
+                    
+                </div> -->
+
+                <div class="grid two">
+                    <div>
+                        <h6>Hours:</h6>
+                        <p>Monday - Friday; 8am - 5pm</p>
+
+                        <h6>Phone:</h6>
+                        <p>
+                            <a href="tel:+6496311953">09 6311953</a>
+                        </p>
+
+                        <h6>Email:</h6>
+                        <p><a href="mailto:admin@necksurgery.co.nz" class="white">admin@necksurgery.co.nz</a></p>
+                    </div>
+                    <div>
+                        <h6>Address:</h6>
+                        <address class="pb-2">
+                            Suite 11, Mauranui Clinic<br />
+                            86 Great South Rd<br />
+                            Epsom 1051<br />
+                            Auckland, NZ
+                        </address>
+
+                        <h6>Urgent appointments</h6>
+                        <p>Available</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h3 class="mt-2">Book an appointment</h3>
+
+                <form id="contact_form" method="post" action="https://formspree.io/f/moqblvnr" class="">  
+                    <!-- <form id="contact_form" method="post" action="/" class=""> -->
+                    <!-- <span>Select department</span>
+                    <select>
+                        <option>Ear Clinic</option>
+                        <option>General ENT Clinic</option>
+                        <option>Nasal and Sinus Clinic</option>
+                    </select> -->
+                    <div class="grid two gap20 mb-2">
+                        <div>
+                            <label>First Name *</label>
+                            <input class="text_input" name="first_name" type="text" value="" required />
+                        </div>
+                        <div>
+                            <label>Last Name *</label>
+                            <input class="text_input" type="text" name="last_name" value="" required />
+                        </div>
+                        <div>
+                            <label>E-mail *</label>
+                            <input class="text_input" type="text" name="email" value="" pattern="[^@\s]+@[^@\s]+\.[^@\s]+" required />
+                        </div>
+                        <div>
+                            <label>Phone Number</label>
+                            <input class="text_input" name="phone_number" type="text" value="" />
+                        </div>
+                    </div>
+                    
+                    <label>Message</label>
+                    <textarea name="message" class="mb-2"></textarea>
+
+                    <button type="submit" name="submit" value="Send" class="btn bg-blue-dark">Submit &nbsp;<i class="lni lni-arrow-right"></i></button>
+                </form>
+            </div>
+            
+            
+        </div>
+    </div>
+
+    <div class="map_wrapper">
+        <div class="map">
+            <iframe width="100%" height="100%" style="border:0" loading="lazy" allowfullscreen
+                referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCkfWWJRx_OrE5FbK-kcK6sTwHLD93LKfs&zoom=18&q=Mauranui+Clinic+86+Great+South+Rd+Epsom+1051+Auckland+NZ">
+            </iframe>
+        </div>
+    </div>
+
+</footer>
+<!-- <div class="align-center bg-blue-dark white small p-2"> &copy; {{ now.Format "2006"}} {{ .Site.Params.legal_title }}. All rights reserved.</div> -->

@@ -1,0 +1,61 @@
+ html {
+     body {
+        > footer {
+            position: relative;
+            background: $bg-page-footer;
+            // overflow: hidden;
+            // padding: 70px 20px;
+            // @include for-phone-only {
+            //     text-align: center;
+            // }
+            
+            a {
+                color: $white;
+            }
+
+            > div.container {
+
+
+                > div {
+                    max-width: $max-width;
+                    margin: 0 auto;
+                    color: $white;
+                    
+                    
+                    
+
+                    ul {
+                        list-style: none;
+
+                        li {
+                            margin: 0;
+                        }
+                    }
+
+                    .follow a {
+                        margin-right: 5px;
+                    }
+                }
+            }
+            .map_wrapper {
+                position: relative;
+                min-height: 400px;
+                // @include for-tablet-landscape-up {
+                //     position: inherit;
+                // }
+                .map {
+                    height: 400px;
+                    // position: absolute;
+                    // top: 0px;
+                    // bottom: 0px;
+                    // right: 0px;
+                    // left: 0;
+                //     @include for-tablet-landscape-up {
+                //         width: 50%;
+                //         left: auto;
+                //     }
+                }
+            }
+        }
+    }
+}

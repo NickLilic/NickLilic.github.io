@@ -1,0 +1,84 @@
+/**
+ * CSS CONFIG FILE
+ * Don't change this file, copy it to a new theme and over write the settings there
+ */
+
+// fonts
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Open+Sans&family=Literata:opsz,wght@7..72,500&display=swap');
+$font-title: 'Poppins', sans-serif;
+$font-body: 'Open Sans', sans-serif;
+$font-logo: 'Literata', serif;
+
+// colors
+$black: #000;
+$white: #fff;
+
+$grey-1: #f4f4f4;
+$grey-2: #B5B5B5;
+$grey-3: #4E4A5A;
+$grey-4: #343b43;
+$grey-5: #1B1B1E;
+
+$yellow: #FBAF00;
+$orange: #FFA400;
+$orange-dark: #db8504;
+$red: #E03616;
+$red-dark: #832232;
+$pink: #FFA987;
+$purple: #805D93;
+$blue-darker: #00344E;
+$blue-dark: #011638;
+$blue: #5998C5;
+$aqua: #44BBA4;
+$mint: #B9FFB7;
+$green: #3F826D;
+$green-dark: #5f947d;
+$beige: #BEA57D;
+$brown: #4F270D;
+
+// Link states
+$link: $blue;
+$hover: $blue-dark;
+
+$link-light: $blue-dark;
+$link-light-hover: $blue;
+
+$button-primary: $link;
+$button-primary-hover: $hover;
+
+// page colours
+$bg-page: $white;
+$bg-page-header: $white;
+$bg-page-footer: $blue;
+$bg-page-section: $black;
+$bg-hero: $grey-2;
+
+// content limit
+$max-width: 1200px;
+$max-width-narrow: 800px;
+
+// borders 
+$border-radius: 1px;
+
+// sizes
+:root {
+    // fonts
+
+    // spacing
+    --spacing-0: 0;
+    --spacing-1: 10px;
+    --spacing-2: 20px;
+    --spacing-3: 30px;
+    --spacing-4: 40px;
+    --spacing-5: 50px;
+    --spacing-6: 60px;
+    --spacing-7: 70px;
+    --spacing-8: 80px;
+    --spacing-9: 90px;
+    --spacing-10: 100px;
+    --spacing-11: 110px;
+    --spacing-12: 120px;
+    --spacing-13: 130px;
+    --spacing-14: 140px;
+    --spacing-15: 150px;
+}
