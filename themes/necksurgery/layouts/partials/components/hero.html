@@ -10,7 +10,10 @@
                     <h1 class="px-1 font-logo">{{ .title }}</h1>
                     <p class="large mb-0">{{ .tagline }}</p>
                 </div>  */}}
-                <div class="pb-2"><img src="/imgs/logo_with_tag_navy.svg" alt="{{ .title }}" /></div>
+                <h1 class="px-1 font-logo hidden">{{ .title }}</h1>
+                <p class="large mb-0 hidden">{{ .tagline }}</p>
+
+                <div class="pb-2"><img src="/imgs/logo_with_tag_navy.svg" alt="{{ .title }} - {{ .tagline }}" /></div>
             </div>
             <!-- <div id="hero-arrow" class="animated fadeIn delay-3s center white">
                 <h5 class="mb-0">Here's how</h5><br/>

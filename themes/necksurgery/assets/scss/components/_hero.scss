@@ -44,7 +44,9 @@
 
             > div {
                 > div {
+                    padding: 55px 55px 65px 55px;
                     @include for-phone-only {
+                        padding: 45px 30px;
                         background: rgba(181, 181, 181 ,0.6);
                         
                     }
