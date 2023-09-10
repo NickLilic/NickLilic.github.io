@@ -1,6 +1,6 @@
 baseURL = 'https://necksurgery.co.nz/'
 languageCode = 'en-us'
-title = 'Dr Nick Lilic'
+title = 'Dr Nick Lilic - ENT, Thyroid, Head and Neck Surgeon'
 theme = "necksurgery"
 
 paginate = 20 
