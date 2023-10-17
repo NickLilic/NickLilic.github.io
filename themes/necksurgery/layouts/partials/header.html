@@ -1,16 +1,16 @@
-<header class="{{ .Site.Params.headerLayout }} {{ if .IsHome }}{{else}} animated fadeIn{{ end }}">
+<header class="{{ .Site.Params.headerLayout }} {{ if .IsHome }}animated fadeIn{{else}} animated fadeIn faster{{ end }}">
     <!-- Desktop -->
 
     <div>
-        <div id="logo" class="animated fadeIn delay-1s">
+        <div id="logo" class="">
             <a href="#"><img src="/imgs/logo_navy.svg" alt="{{ .Site.Title }}" /></a>
-            {{/*  <a href="#">
+            {{/* <a href="#">
                 {{ .Site.Title }}
                 <div id="logo-tag-line">MBChB MSc FRACS</div>
-            </a>  */}}
-            
+            </a> */}}
+
         </div>
-        <div id="main-menu" class="animated fadeIn delay-1s">
+        <div id="main-menu" class="">
             <nav>
                 <ul>
                     <li><a href="#services">Services</a></li>
@@ -51,5 +51,5 @@
             </nav> -->
         </div>
     </div>
-    
+
 </header>
