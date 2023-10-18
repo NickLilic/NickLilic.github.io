@@ -1,13 +1,13 @@
 // preload hero image
 const img = new Image();
-img.onload = function() { 
+img.onload = function () {
     console.log('loaded loader');
 }
-img.src = "/imgs/logo.png";
+img.src = "/imgs/hero.png";
 
 const imgBg = new Image();
-imgBg.onload = function() { 
-    if(document.getElementById('hero-bg')) {
+imgBg.onload = function () {
+    if (document.getElementById('hero-bg')) {
         document.getElementById('hero-bg').classList.add("animated");
         document.getElementById('hero-bg').classList.add("fadeIn");
         document.getElementById('hero-bg').classList.remove("hidden");
