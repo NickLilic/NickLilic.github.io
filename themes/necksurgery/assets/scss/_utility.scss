@@ -66,6 +66,7 @@
 
 .phone-only {
     display: none !important;
+
     @include for-phone-only {
         display: block !important;
     }
@@ -73,6 +74,7 @@
 
 .tablet-portrait-up {
     display: none !important;
+
     @include for-tablet-portrait-up {
         display: block !important;
     }
@@ -80,6 +82,7 @@
 
 .tablet-landscape-up {
     display: none !important;
+
     @include for-tablet-landscape-up {
         display: inline-block !important;
     }
@@ -87,6 +90,7 @@
 
 .desktop-up {
     display: none !important;
+
     @include for-big-desktop-up {
         display: block !important;
     }
@@ -108,8 +112,10 @@
     @include for-phone-only {
         position: relative;
     }
+
     @include for-tablet-portrait-up {
-        position: -webkit-sticky; /* Safari */
+        position: -webkit-sticky;
+        /* Safari */
         position: sticky;
         top: 0;
     }
@@ -119,7 +125,13 @@
     position: relative;
 }
 
-h1, h2, h3, h4, h5, h6, .scroll-offset {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.scroll-offset {
     scroll-margin-top: 215px;
 
     @include for-tablet-portrait-up {
@@ -135,16 +147,20 @@ h1, h2, h3, h4, h5, h6, .scroll-offset {
 /* border */
 .border-top {
     border-top: 1px solid $grey-2;
+
     &-white {
         border-top: 1px solid $white
     }
 }
+
 .border-bottom {
     border-bottom: 1px solid $grey-2;
+
     &-white {
         border-bottom: 1px solid $white
     }
 }
+
 .border-radius {
     border-radius: $border-radius;
 }
@@ -335,7 +351,8 @@ h1, h2, h3, h4, h5, h6, .scroll-offset {
     }
 }
 
-.w, .width {
+.w,
+.width {
     &-full {
         width: 100%;
     }
@@ -363,18 +380,21 @@ h1, h2, h3, h4, h5, h6, .scroll-offset {
 /*  grid */
 .grid {
     display: grid;
-    @include for-tablet-portrait-up {
-    }
+
+    @include for-tablet-portrait-up {}
+
     grid-gap: 10px;
 
     &.two {
         grid-template-columns: 1fr;
+
         @include for-tablet-portrait-up {
             grid-template-columns: minmax(100px, 1fr) minmax(100px, 1fr);
         }
-        
+
         &-tablet-up {
             grid-template-columns: 1fr;
+
             @include for-tablet-landscape-up {
                 grid-template-columns: minmax(100px, 1fr) minmax(100px, 1fr);
             }
@@ -383,21 +403,26 @@ h1, h2, h3, h4, h5, h6, .scroll-offset {
         &-slim-right {
             grid-template-columns: minmax(100px, 1fr) 30%;
         }
+
         &-slim-left {
-            grid-template-columns:  350px minmax(250px, 1fr);
+            grid-template-columns: 350px minmax(250px, 1fr);
         }
+
         &-small-left {
-            grid-template-columns:  1fr;
+            grid-template-columns: 1fr;
+
             @include for-tablet-portrait-up {
-                grid-template-columns:  120px minmax(200px, 1fr);
+                grid-template-columns: 120px minmax(200px, 1fr);
             }
         }
 
         &-very-slim-left {
-            grid-template-columns:  1fr;
+            grid-template-columns: 1fr;
+
             @include for-tablet-landscape-up {
                 grid-template-columns: minmax(100px, 200px) minmax(250px, 1fr);
             }
+
             img {
                 max-width: 200px;
             }
@@ -408,48 +433,69 @@ h1, h2, h3, h4, h5, h6, .scroll-offset {
             grid-template-columns: minmax(100px, 1fr) minmax(100px, 1fr);
         }
     }
-    
+
     &.three {
-        grid-template-columns:  1fr;
+        grid-template-columns: 1fr;
 
         &.mobile-two {
             @include for-phone-only {
-                grid-template-columns:  1fr 1fr;
+                grid-template-columns: 1fr 1fr;
             }
         }
 
         @include for-tablet-portrait-up {
-            grid-template-columns: minmax(120px, 1fr)  minmax(120px, 1fr) minmax(120px, 1fr);
+            grid-template-columns: minmax(120px, 1fr) minmax(120px, 1fr) minmax(120px, 1fr);
         }
 
         &.tablet-break {
             @include for-tablet-portrait-up {
-                grid-template-columns: minmax(120px, 1fr)  minmax(120px, 1fr);
+                grid-template-columns: minmax(120px, 1fr) minmax(120px, 1fr);
             }
+
             @include for-tablet-landscape-up {
-                grid-template-columns: minmax(120px, 1fr)  minmax(120px, 1fr) minmax(120px, 1fr);
-            }   
+                grid-template-columns: minmax(120px, 1fr) minmax(120px, 1fr) minmax(120px, 1fr);
+            }
         }
 
         &.force {
             display: grid;
-            grid-template-columns: 1fr  1fr 1fr;
+            grid-template-columns: 1fr 1fr 1fr;
         }
     }
 
     &.four {
-        grid-template-columns:  1fr;
+        grid-template-columns: 1fr;
+
         @include for-tablet-portrait-up {
-            grid-template-columns: minmax(120px, 1fr)  minmax(120px, 1fr) minmax(120px, 1fr) minmax(120px, 1fr);
+            grid-template-columns: minmax(120px, 1fr) minmax(120px, 1fr) minmax(120px, 1fr) minmax(120px, 1fr);
         }
 
         &.tablet-break {
             @include for-tablet-portrait-up {
-                grid-template-columns: minmax(120px, 1fr)  minmax(120px, 1fr);
+                grid-template-columns: minmax(120px, 1fr) minmax(120px, 1fr);
             }
+
             @include for-tablet-landscape-up {
-                grid-template-columns: minmax(120px, 1fr)  minmax(120px, 1fr) minmax(120px, 1fr) minmax(120px, 1fr);
-            }   
+                grid-template-columns: minmax(120px, 1fr) minmax(120px, 1fr) minmax(120px, 1fr) minmax(120px, 1fr);
+            }
+        }
+    }
+
+    &.five {
+        grid-template-columns: 1fr;
+
+        @include for-tablet-portrait-up {
+            grid-template-columns: minmax(120px, 1fr) minmax(120px, 1fr) minmax(120px, 1fr) minmax(120px, 1fr) minmax(120px, 1fr);
+        }
+
+        &.tablet-break {
+            @include for-tablet-portrait-up {
+                grid-template-columns: minmax(120px, 1fr) minmax(120px, 1fr);
+            }
+
+            @include for-tablet-landscape-up {
+                grid-template-columns: minmax(120px, 1fr) minmax(120px, 1fr) minmax(120px, 1fr) minmax(120px, 1fr);
+            }
         }
     }
 
@@ -471,6 +517,7 @@ h1, h2, h3, h4, h5, h6, .scroll-offset {
 
     &.gap60 {
         gap: 40px;
+
         @include for-tablet-landscape-up {
             gap: 60px;
         }
@@ -483,7 +530,7 @@ h1, h2, h3, h4, h5, h6, .scroll-offset {
     &.center {
         align-content: center;
     }
-    
+
     &.end {
         align-items: end;
     }
@@ -506,4 +553,6 @@ h1, h2, h3, h4, h5, h6, .scroll-offset {
     margin: 0 auto;
 }
 
-.roles > div { font-size: small; }
+.roles>div {
+    font-size: small;
+}
