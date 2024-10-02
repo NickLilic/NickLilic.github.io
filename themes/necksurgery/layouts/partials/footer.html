@@ -94,8 +94,22 @@
                     <label>Message</label>
                     <textarea name="message" class="mb-2"></textarea>
 
-                    <button type="submit" name="submit" value="Send" class="btn bg-blue-dark">Submit &nbsp;<i
-                            class="lni lni-arrow-right"></i></button>
+                    <button class="btn bg-blue-dark g-recaptcha" data-sitekey="6LelJVUqAAAAALttnEgY8tIz4KxWsZhYjIMPJbvM" data-callback='onSubmit'
+                        data-action='submit'>Submit &nbsp;<i class="lni lni-arrow-right"></i></button>
+                    <script src="https://www.google.com/recaptcha/api.js"></script>
+                    <script>
+                        function onSubmit(token) {
+                            document.getElementById("contact_form").submit();
+                        }
+                    </script>
+
+                    <div>
+                        <small>
+                            This site is protected by reCAPTCHA and the Google
+                            <a href="https://policies.google.com/privacy">Privacy Policy</a> and
+                            <a href="https://policies.google.com/terms">Terms of Service</a> apply.
+                        </small>
+                    </div>
                 </form>
             </div>
 
