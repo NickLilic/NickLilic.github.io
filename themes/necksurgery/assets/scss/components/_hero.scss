@@ -10,14 +10,31 @@
     #hero-bg {
         max-width: $max-width;
         margin: 0 auto;
-        background-position: right bottom;
         background-repeat: no-repeat;
         background-color: $bg-hero;
-        background-size: auto;
 
-        @include for-phone-only {
-            background-position: bottom;
-            background-size: contain;
+        background-position: right bottom;
+        background-size: contain;
+
+        @include for-tablet-portrait-up {
+            background-position: right bottom;
+            background-size: auto;
+        }
+
+        @include for-tablet-landscape-up {
+            background-position: right bottom;
+            background-size: 40%;
+        }
+
+        @include for-big-desktop-up {
+            background-position: right bottom;
+            background-size: auto;
+        }
+
+        // catch horozontal phones n shit
+        @media (max-height:500px) {
+            min-height: 500px;
+            background-size: 30%;
         }
 
         .hero-content {
@@ -79,7 +96,7 @@
 
     > div {
         // background: $bg-hero url('/imgs/hero.jpg') no-repeat center center;
-        background-size: cover;
+        background-size: auto;
         min-height: 100vh;
         @include for-big-desktop-up {
             background-position: bottom center;
