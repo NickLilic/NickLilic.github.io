@@ -9,13 +9,16 @@ html {
             box-sizing: border-box;
             width: 100vw;
             
+            a {
+                display: block;
+            }
+
             #logo {
                 padding: 0;
                 font-family: $font-logo;
                 font-size: 25px;
                 @include for-phone-only {
                     margin: 0 auto;
-                    padding-bottom: 10px;
                 }
 
                 #logo-tag-line {
@@ -30,10 +33,6 @@ html {
             }
 
             &.right, &.left {
-
-                @include for-phone-only {
-                    padding: 10px;
-                }
 
                 &.home-header {
                     position: absolute;
