@@ -3,7 +3,7 @@ languageCode = 'en-us'
 title = 'Dr Nick Lilic - ENT, Thyroid, Head and Neck Surgeon'
 theme = "necksurgery"
 
-paginate = 20 
+pagination.pagerSize = 20 
 
 [params]
     legal_title = "Dr Nick Lilic"
