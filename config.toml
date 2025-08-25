@@ -28,8 +28,9 @@ pagination.pagerSize = 20
     info = "Head and Neck Surgeon"
 
     # analytics
-    google_analitycs_id = 'G-79WZ1H9Z52'
-    
+    # google_analitycs_id = 'G-79WZ1H9Z52'
+    google_analitycs_id = 'AW-16560458058'
+
 [taxonomies]
     category = "categories"
     tag = "tags"
