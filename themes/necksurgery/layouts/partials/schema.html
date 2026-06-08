@@ -1,0 +1,39 @@
+{{- if .IsHome -}}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Physician",
+  "name": "Dr Nick Lilic",
+  "description": {{ .Site.Params.description | jsonify }},
+  "url": {{ .Site.BaseURL | jsonify }},
+  "image": "https://necksurgery.co.nz/imgs/social-a-16x9.png",
+  "medicalSpecialty": ["Otolaryngologic", "Surgical"],
+  "telephone": "+64-9-869-3097",
+  "email": "admin@necksurgery.co.nz",
+  "priceRange": "$$",
+  "address": {
+    "@type": "PostalAddress",
+    "name": "Suite 10, Mauranui Clinic",
+    "streetAddress": "86 Great South Road",
+    "addressLocality": "Epsom",
+    "addressRegion": "Auckland",
+    "postalCode": "1051",
+    "addressCountry": "NZ"
+  },
+  "openingHoursSpecification": [{
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+    "opens": "08:00",
+    "closes": "17:00"
+  }],
+  "availableService": [
+    {"@type": "MedicalProcedure", "name": "Ear, Nose and Throat (ENT) surgery"},
+    {"@type": "MedicalProcedure", "name": "Head and Neck surgery"},
+    {"@type": "MedicalProcedure", "name": "Thyroid and parathyroid surgery"},
+    {"@type": "MedicalProcedure", "name": "Sinus and nasal surgery"},
+    {"@type": "MedicalProcedure", "name": "Skin cancer and facial plastics"},
+    {"@type": "MedicalProcedure", "name": "Salivary gland disorders"}
+  ]
+}
+</script>
+{{- end -}}

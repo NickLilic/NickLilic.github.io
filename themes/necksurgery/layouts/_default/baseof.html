@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-NZ">
 
 <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -20,15 +20,20 @@
     <meta name="description" content="{{ .Site.Params.description }}">
     <meta name="keywords" content="{{ .Site.Params.keywords }}">
 
+    <!-- canonical -->
+    <link rel="canonical" href="{{ .Permalink }}" />
+
+    <!-- structured data -->
+    {{ partial "schema.html" . }}
+
     <!-- Social cards -->
-    <meta property="og:url" content="https://necksurgery.co.nz" />
+    <meta property="og:url" content="{{ .Permalink }}" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="{{ .Site.Title }}" />
     <meta property="og:description" content="{{ .Site.Params.description }}" />
     <meta property="og:image" content="https://necksurgery.co.nz/imgs/social-a-16x9.png" />
 
     <meta name="twitter:card" content="summary" />
-    <meta name="twitter:site" content="https://necksurgery.co.nz" />
     <meta name="twitter:title" content="{{ .Site.Title }}" />
     <meta name="twitter:description" content="{{ .Site.Params.description }}" />
     <meta name="twitter:image" content="https://necksurgery.co.nz/imgs/social-a-16x9.png" />

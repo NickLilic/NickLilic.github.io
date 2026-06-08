@@ -1,9 +1,11 @@
 baseURL = 'https://necksurgery.co.nz/'
-languageCode = 'en-us'
+languageCode = 'en-nz'
 title = 'Dr Nick Lilic - ENT, Thyroid, Head and Neck Surgeon'
 theme = "necksurgery"
 
-pagination.pagerSize = 20 
+enableRobotsTXT = true
+
+pagination.pagerSize = 20
 
 [params]
     legal_title = "Dr Nick Lilic"
@@ -30,6 +32,11 @@ pagination.pagerSize = 20
     # analytics
     # google_analitycs_id = 'G-79WZ1H9Z52'
     google_analitycs_id = 'AW-16560458058'
+
+# Allow raw-HTML content files (content/*.html) — required since the Hugo upgrade
+# enabled the security.allowContent policy, which blocks text/html by default.
+[security]
+    allowContent = ['^text/markdown$', '^text/html$']
 
 [taxonomies]
     category = "categories"
