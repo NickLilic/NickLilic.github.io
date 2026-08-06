@@ -57,6 +57,15 @@ $bg-hero: $grey-2;
 $max-width: 1200px;
 $max-width-narrow: 800px;
 
+// header
+// The header is position:fixed, so it takes no layout space — .page must offset
+// content by exactly this much or the first heading sits too close to the header.
+// Values are the header's measured natural height (driven by the logo, which is
+// wider on tablet-up; below 600px the nav wraps under it). They are applied as
+// min-height on the header itself so the two can never drift apart.
+$header-height: 127px;
+$header-height-phone: 173px;
+
 // borders 
 $border-radius: 1px;
 

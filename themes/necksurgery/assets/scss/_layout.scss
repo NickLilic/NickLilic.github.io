@@ -37,9 +37,9 @@
 
 
 .page {
-    padding-top: 86px;
+    padding-top: $header-height;
     @include for-phone-only {
-        padding-top: 66px;
+        padding-top: $header-height-phone;
     }
 }
 

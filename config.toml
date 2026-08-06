@@ -59,8 +59,12 @@ pagination.pagerSize = 20
     weight = 2
     url = "/services"
 [[menu.main]]
-    name = "Contact"
+    name = "Media"
     weight = 3
+    url  = "/media"
+[[menu.main]]
+    name = "Contact"
+    weight = 4
     url  = "/contact"
 
 

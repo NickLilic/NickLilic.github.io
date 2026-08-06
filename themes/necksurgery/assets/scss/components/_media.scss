@@ -1,0 +1,51 @@
+/*
+ * Media page - intro banner and podcast listings
+ */
+.media-intro {
+
+    // the trailing paragraph margin would otherwise make the gap below the intro
+    // 20px larger than the gap above the heading
+    .content-narrow > p:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.podcasts {
+
+    .podcast {
+        padding-bottom: var(--spacing-5);
+        margin-bottom: var(--spacing-5);
+        border-bottom: 1px solid $grey-1;
+
+        &:last-child {
+            padding-bottom: 0;
+            margin-bottom: 0;
+            border-bottom: 0;
+        }
+
+        h2 {
+            margin-bottom: 5px;
+        }
+
+        .podcast-meta {
+            color: $grey-3;
+            margin-bottom: var(--spacing-2);
+        }
+    }
+
+    .podcast-player {
+        margin: var(--spacing-3) 0 var(--spacing-1) 0;
+
+        iframe {
+            display: block;
+            width: 100%;
+            height: 200px;
+            border: 0;
+        }
+
+        audio {
+            display: block;
+            width: 100%;
+        }
+    }
+}

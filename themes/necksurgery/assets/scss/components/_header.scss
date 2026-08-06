@@ -8,6 +8,12 @@ html {
             position: fixed;
             box-sizing: border-box;
             width: 100vw;
+
+            // pins the header to the offset .page reserves for it (see $header-height)
+            min-height: $header-height;
+            @include for-phone-only {
+                min-height: $header-height-phone;
+            }
             
             a {
                 display: block;
